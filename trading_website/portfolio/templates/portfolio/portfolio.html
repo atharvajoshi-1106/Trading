@@ -1,0 +1,279 @@
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="flex">
+        <!-- Sidebar -->
+        <div class="w-1/4 bg-white border-r">
+            <div class="p-4 border-b">
+                <div class="flex justify-between items-center">
+                    <span class="text-sm text-gray-500">NIFTY 50</span>
+                    <span class="text-sm text-red-500">25756.20 -54.65 (-0.21%)</span>
+                </div>
+                <div class="flex justify-between items-center mt-1">
+                    <span class="text-sm text-gray-500">SENSEX</span>
+                    <span class="text-sm text-red-500">84160.92 -138.86 (-0.16%)</span>
+                </div>
+            </div>
+            <div class="p-4">
+                <input type="text" placeholder="Search eg: infy bse, nifty fut, index fund, etc"
+                    class="w-full p-2 border rounded text-sm">
+            </div>
+            <div class="p-4 text-sm text-gray-500">15 / 100</div>
+            <div class="overflow-y-auto h-screen">
+                <ul>
+                    <li class="flex justify-between items-center p-4 border-b">
+                        <span class="text-red-500">GOLDBEES</span>
+                        <span class="text-gray-500">-0.09 -0.14%</span>
+                        <span class="text-red-500">63.46</span>
+                    </li>
+                    <li class="flex justify-between items-center p-4 border-b">
+                        <span class="text-red-500">HDFCBANK</span>
+                        <span class="text-gray-500">-7.00 -0.40%</span>
+                        <span class="text-red-500">1725.05</span>
+                    </li>
+                    <li class="flex justify-between items-center p-4 border-b">
+                        <span class="text-red-500">HINDUNILVR</span>
+                        <span class="text-gray-500">-56.30 -1.90%</span>
+                        <span class="text-red-500">2902.00</span>
+                    </li>
+                    <li class="flex justify-between items-center p-4 border-b">
+                        <span class="text-green-500">INFY</span>
+                        <span class="text-gray-500">12.40 0.66%</span>
+                        <span class="text-green-500">1888.00</span>
+                    </li>
+                    <li class="flex justify-between items-center p-4 border-b">
+                        <span class="text-red-500">ONGC</span>
+                        <span class="text-gray-500">-2.65 -0.89%</span>
+                        <span class="text-red-500">294.95</span>
+                    </li>
+                    <li class="flex justify-between items-center p-4 border-b">
+                        <span class="text-red-500">TCS</span>
+                        <span class="text-gray-500">-18.05 -0.42%</span>
+                        <span class="text-red-500">4250.45</span>
+                    </li>
+                    <li class="flex justify-between items-center p-4 border-b">
+                        <span class="text-red-500">INDIA VIX</span>
+                        <span class="text-gray-500">-0.55 -4.30%</span>
+                        <span class="text-red-500">12.24</span>
+                    </li>
+                    <li class="flex justify-between items-center p-4 border-b">
+                        <span class="text-red-500">ASIANPAINT</span>
+                        <span class="text-gray-500">-67.35 -2.02%</span>
+                        <span class="text-red-500">3261.75</span>
+                    </li>
+                    <li class="flex justify-between items-center p-4 border-b">
+                        <span class="text-red-500">ESCORTS</span>
+                        <span class="text-gray-500">-43.50 -1.02%</span>
+                        <span class="text-red-500">4225.30</span>
+                    </li>
+                    <li class="flex justify-between items-center p-4 border-b">
+                        <span class="text-red-500">KHOOBSURAT</span>
+                        <span class="text-gray-500">-0.02 -2.33%</span>
+                        <span class="text-red-500">0.84</span>
+                    </li>
+                    <li class="flex justify-between items-center p-4 border-b">
+                        <span class="text-green-500">SUNRAJDI</span>
+                        <span class="text-gray-500">0.33 3.18%</span>
+                        <span class="text-green-500">10.70</span>
+                    </li>
+                    <li class="flex justify-between items-center p-4 border-b">
+                        <span class="text-red-500">YAMNINV</span>
+                        <span class="text-gray-500">-0.11 -4.85%</span>
+                        <span class="text-red-500">2.16</span>
+                    </li>
+                    <li class="flex justify-between items-center p-4 border-b">
+                        <span class="text-gray-500">BMAL</span>
+                        <span class="text-gray-500">0.00 0.00%</span>
+                        <span class="text-gray-500">10.87</span>
+                    </li>
+                    <li class="flex justify-between items-center p-4 border-b">
+                        <span class="text-gray-500">NCLRESE</span>
+                        <span class="text-gray-500">0.00 0.00%</span>
+                        <span class="text-gray-500">0.77</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="w-3/4 p-4">
+            <div class="flex justify-between items-center mb-4">
+                <div class="flex items-center">
+                    <i class="fas fa-arrow-left text-gray-500 mr-4"></i>
+                    <h1 class="text-xl font-semibold">Holdings (9)</h1>
+                    <select class="ml-4 p-2 border rounded text-sm">
+                        <option>All stocks</option>
+                    </select>
+                </div>
+                <div class="flex items-center">
+                    <input type="text" placeholder="Search" class="p-2 border rounded text-sm mr-4">
+                    <i class="fas fa-user-shield text-gray-500 mr-4"></i>
+                    <i class="fas fa-users text-gray-500 mr-4"></i>
+                    <i class="fas fa-chart-line text-gray-500 mr-4"></i>
+                    <i class="fas fa-download text-gray-500"></i>
+                </div>
+            </div>
+            <div class="bg-yellow-100 p-4 rounded mb-4">
+                By enabling DDPI, you can now easily sell your holdings without TPIN and OTP. <a href="#"
+                    class="text-blue-500">Learn more.</a>
+            </div>
+            <div class="flex justify-between items-center mb-4">
+                <div>
+                    <div class="text-sm text-gray-500">Total investment</div>
+                    <div class="text-xl font-semibold">1,50000</div>
+                </div>
+                <div>
+                    <div class="text-sm text-gray-500">Current value</div>
+                    <div class="text-xl font-semibold">1,30,437</div>
+                </div>
+                <div>
+                    <div class="text-sm text-gray-500">Total P&L</div>
+                    <div class="text-xl font-semibold text-red-500">19,563 (-13.04%)</div>
+                </div>
+            </div>
+            <table class="w-full text-sm text-left">
+                <thead class="bg-gray-100">
+                    <tr>
+                        <th class="p-2">Instrument</th>
+                        <th class="p-2">Qty.</th>
+                        <th class="p-2">Avg. cost</th>
+                        <th class="p-2">LTP</th>
+                        <th class="p-2">Cur. val</th>
+                        <th class="p-2">P&L</th>
+                        <th class="p-2">Net chg.</th>
+                        <th class="p-2">Day chg.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b">
+                        <td class="p-2">Axis Bluechip Fund</td>
+                        <td class="p-2">100</td>
+                        <td class="p-2">200</td>
+                        <td class="p-2">173.89</td>
+                        <td class="p-2">17,389.33</td>
+                        <td class="p-2 text-red-500">-2,610.67</td>
+                        <td class="p-2 text-red-500">-13.05%</td>
+                        <td class="p-2 text-red-500">-0.35%</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-2">SBI Small Cap Fund</td>
+                        <td class="p-2">85</td>
+                        <td class="p-2">196.07</td>
+                        <td class="p-2">170.47</td>
+                        <td class="p-2">14,490.08</td>
+                        <td class="p-2 text-red-500">-2,175.92</td>
+                        <td class="p-2 text-red-500">-13.06%</td>
+                        <td class="p-2 text-red-500">-0.32%</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-2">ICICI Prudential Value Discovery Fund</td>
+                        <td class="p-2">60</td>
+                        <td class="p-2">189.47</td>
+                        <td class="p-2">164.75</td>
+                        <td class="p-2">9,884.92</td>
+                        <td class="p-2 text-red-500">-1,483.08</td>
+                        <td class="p-2 text-red-500">-13.04%</td>
+                        <td class="p-2 text-red-500">-0.29%</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-2">HDFC Mid-Cap Opportunities Fund</td>
+                        <td class="p-2">90</td>
+                        <td class="p-2">197.66</td>
+                        <td class="p-2">171.90</td>
+                        <td class="p-2">15,470.94</td>
+                        <td class="p-2 text-red-500">-2,318.06</td>
+                        <td class="p-2 text-red-500">-13.03%</td>
+                        <td class="p-2 text-red-500">-0.33%</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-2">Kotak Emerging Equity Fund</td>
+                        <td class="p-2">75</td>
+                        <td class="p-2">198.69</td>
+                        <td class="p-2">172.80</td>
+                        <td class="p-2">12,960.01</td>
+                        <td class="p-2 text-red-500">-1,941.99</td>
+                        <td class="p-2 text-red-500">-13.03%</td>
+                        <td class="p-2 text-red-500">-0.31%</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-2">Mirae Asset Large Cap Fund</td>
+                        <td class="p-2">95</td>
+                        <td class="p-2">192.29</td>
+                        <td class="p-2">167.29</td>
+                        <td class="p-2">15,892.46</td>
+                        <td class="p-2 text-red-500">-2,375.54</td>
+                        <td class="p-2 text-red-500">-13.01%</td>
+                        <td class="p-2 text-red-500">-0.30%</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-2">UTI Flexi Cap Fund</td>
+                        <td class="p-2">100</td>
+                        <td class="p-2">194.52</td>
+                        <td class="p-2">169.22</td>
+                        <td class="p-2">16,922.46</td>
+                        <td class="p-2 text-red-500">-2,529.54</td>
+                        <td class="p-2 text-red-500">-13.01%</td>
+                        <td class="p-2 text-red-500">-0.28%</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-2">Nippon India Growth Fund</td>
+                        <td class="p-2">65</td>
+                        <td class="p-2">188.88</td>
+                        <td class="p-2">164.32</td>
+                        <td class="p-2">10,680.92</td>
+                        <td class="p-2 text-red-500">-1,596.08</td>
+                        <td class="p-2 text-red-500">-13.00%</td>
+                        <td class="p-2 text-red-500">-0.27%</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-2">Franklin India Focused Equity Fund</td>
+                        <td class="p-2">30</td>
+                        <td class="p-2">166.67</td>
+                        <td class="p-2">144.99</td>
+                        <td class="p-2">4,349.88</td>
+                        <td class="p-2 text-red-500">-650.12</td>
+                        <td class="p-2 text-red-500">-13.00%</td>
+                        <td class="p-2 text-red-500">-0.26%</td>
+                    </tr>
+                    <tr class="border-b">
+                        <td class="p-2 font-semibold">Total</td>
+                        <td class="p-2"></td>
+                        <td class="p-2"></td>
+                        <td class="p-2"></td>
+                        <td class="p-2">1,30,437</td>
+                        <td class="p-2 text-red-500">-19,563</td>
+                        <td class="p-2 text-red-500">-13.04%</td>
+                        <td class="p-2"></td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <div class="mt-4 p-4 bg-blue-500 text-white text-center rounded">
+                ₹1,30,437
+            </div>
+            <div class="flex justify-center items-center mt-4">
+                <label class="mr-4">
+                    <input type="radio" name="view" class="mr-1"> Current value
+                </label>
+                <label class="mr-4">
+                    <input type="radio" name="view" class="mr-1"> Investment value
+                </label>
+                <label>
+                    <input type="radio" name="view" class="mr-1"> P&L
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

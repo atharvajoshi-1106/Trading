@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="flex flex-col h-screen">
+        <!-- Header -->
+        <div class="flex justify-between items-center p-4 bg-white shadow">
+            <div class="flex space-x-4">
+                <span class="text-red-500">NIFTY 50 25756.20 -54.65 (-0.21%)</span>
+                <span class="text-red-500">SENSEX 84158.25 -141.53 (-0.17%)</span>
+            </div>
+            <div class="flex space-x-4">
+                <a href="{% url 'home' %}" class="text-gray-600">Dashboard</a>
+                <a href="{% url 'order' %}" class="text-gray-600">Orders</a>
+                <a href="{% url 'portfolio' %}" class="text-gray-600">Holdings</a>
+                <a href="{% url 'postion' %}" class="text-gray-600">Positions</a>
+                <a href="#" class="text-gray-600">Bids</a>
+                <a href="#" class="text-gray-600">Funds</a>
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 rounded-full bg-purple-500 text-white flex items-center justify-center">AV</div>
+                    <span class="text-gray-600">KTU262</span>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="flex flex-1">
+            <!-- Sidebar -->
+            <div class="w-1/4 bg-white border-r">
+                <div class="p-4">
+                    <input type="text" placeholder="Search eg: infy bse, nifty fut, index fund, etc"
+                        class="w-full p-2 border rounded">
+                </div>
+                <div class="p-4 text-gray-500">15 / 100</div>
+                <div class="overflow-y-auto h-full">
+                    <ul>
+                        <li class="flex justify-between p-4 border-b">
+                            <span class="text-green-500">GOLDBEES</span>
+                            <span>0.30 0.47% <span class="text-green-500">63.99</span></span>
+                        </li>
+                        <li class="flex justify-between p-4 border-b">
+                            <span class="text-red-500">HDFCBANK</span>
+                            <span>-24.35 -1.45% <span class="text-red-500">1657.65</span></span>
+                        </li>
+                        <li class="flex justify-between p-4 border-b">
+                            <span class="text-red-500">HINDUNILVR</span>
+                            <span>-44.60 -1.54% <span class="text-red-500">2848.75</span></span>
+                        </li>
+                        <li class="flex justify-between p-4 border-b">
+                            <span class="text-green-500">INFY</span>
+                            <span>24.75 1.31% <span class="text-green-500">1918.15</span></span>
+                        </li>
+                        <li class="flex justify-between p-4 border-b">
+                            <span class="text-green-500">ONGC</span>
+                            <span>3.20 1.10% <span class="text-green-500">295.25</span></span>
+                        </li>
+                        <li class="flex justify-between p-4 border-b">
+                            <span class="text-green-500">TCS</span>
+                            <span>19.50 0.46% <span class="text-green-500">4252.25</span></span>
+                        </li>
+                        <li class="flex justify-between p-4 border-b">
+                            <span class="text-green-500">INDIA VIX <span class="text-xs">INDEX</span></span>
+                            <span>0.96 7.29% <span class="text-green-500">14.13</span></span>
+                        </li>
+                        <li class="flex justify-between p-4 border-b">
+                            <span class="text-red-500">ASIANPAINT</span>
+                            <span>-76.80 -2.44% <span class="text-red-500">3072.50</span></span>
+                        </li>
+                        <li class="flex justify-between p-4 border-b">
+                            <span class="text-red-500">ESCORTS</span>
+                            <span>-136.40 -3.29% <span class="text-red-500">4015.65</span></span>
+                        </li>
+                        <li class="flex justify-between p-4 border-b">
+                            <span class="text-green-500">KHOOBSURAT <span class="text-xs">BSE</span></span>
+                            <span>0.04 4.94% <span class="text-green-500">0.85</span></span>
+                        </li>
+                        <li class="flex justify-between p-4 border-b">
+                            <span class="text-green-500">SUNRAJDI <span class="text-xs">BSE</span></span>
+                            <span>0.55 4.92% <span class="text-green-500">11.72</span></span>
+                        </li>
+                        <li class="flex justify-between p-4 border-b">
+                            <span class="text-red-500">YAMNINV <span class="text-xs">BSE</span></span>
+                            <span>-0.10 -4.85% <span class="text-red-500">1.96</span></span>
+                        </li>
+                        <li class="flex justify-between p-4 border-b">
+                            <span class="text-gray-500">BMAL <span class="text-xs">BSE</span></span>
+                            <span>0.00 0.00% <span class="text-gray-500">10.87</span></span>
+                        </li>
+                        <li class="flex justify-between p-4 border-b">
+                            <span class="text-red-500">NCLRESE <span class="text-xs">BSE</span></span>
+                            <span>75.00 -1.33% <span class="text-red-500">0.74</span></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex justify-center p-4 border-t">
+                    <ul class="flex space-x-2">
+                        <li><a href="#" class="text-orange-500">1</a></li>
+                        <li><a href="#" class="text-gray-500">2</a></li>
+                        <li><a href="#" class="text-gray-500">3</a></li>
+                        <li><a href="#" class="text-gray-500">4</a></li>
+                        <li><a href="#" class="text-gray-500">5</a></li>
+                        <li><a href="#" class="text-gray-500">6</a></li>
+                        <li><a href="#" class="text-gray-500">7</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Main Panel -->
+            <div class="flex-1 p-8">
+                <div class="bg-yellow-100 p-4 mb-4">
+                    Funds added between 12:00AM and 7:30 AM will be visible after 7:30AM.
+                </div>
+                <div class="flex flex-col items-center justify-center h-full">
+                    <i class="fas fa-anchor text-gray-300 text-6xl mb-4"></i>
+                    <p class="text-gray-500 mb-4">You don't have any positions yet</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded mb-4">Get started</button>
+                    <div class="flex items-center space-x-2">
+                        <input type="checkbox" id="analytics" class="form-checkbox text-blue-500">
+                        <label for="analytics" class="text-blue-500">Analytics</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
